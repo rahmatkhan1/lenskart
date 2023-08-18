@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="static/contact.css">
+</head> -->
+{% extends "base.html" %}
+{% block content%}
+
+<body>
+  <form method="post">
+    {% csrf_token %}
+
+
+    <!-- <div class="container">
+      <h1>Connect With Us</h1>
+      <p>We would love to respond your queries and help you succeed.<br>Feel free to get in touch with us.</p>
+      <div class="contact-box">
+        <div class="contact-left">
+          <h3>Send your request</h3>
+
+
+          <div class="input-row">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Your Name" name="name">
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone</label>
+              <input type="tel" placeholder="Your Phone Number" name="phone">
+            </div>
+
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Your Email" name="email">
+            </div>
+            <div class="input-group">
+              <label for="subject">Subject</label>
+              <input type="text" placeholder="Product Query" name="subject">
+            </div>
+
+          </div>
+          <label for="message">Message</label>
+          <textarea rows="5" placeholder="Your Messasge" name="message"></textarea>
+          <input type="submit" value="Send"></input> -->
+    <div class="container">
+      <h1>Connect With Us</h1>
+
+      <label for="name">Name</label>
+      <input type="text" placeholder="Your Name" name="name">
+
+      <label for="email">Email</label>
+      <input type="email" placeholder="Your Email" name="email">
+
+      <label for="phone">Phone</label>
+      <input type="tel" placeholder="Your Phone Number" name="phone">
+
+      <label for="subject">Subject</label>
+      <input type="text" placeholder="Product Query" name="subject">
+
+      <label for="message">Message</label>
+      <textarea rows="5" placeholder="Your Messasge" name="message"></textarea>
+
+      <input type="submit" value="Send"></input>
+
+  </form>
+  </div>
+
+  <div class="contact-right">
+    <h3>Reach Out Us</h3>
+    <table>
+      <tr>
+        <td>Email</td>
+        <td>contact@example.com</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>+91 9876588902</td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>#212, Ground Floor, 7th Cross <br>
+          Albert Layout, Philips Road, Bengaluru,560011</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  {% endblock %}
