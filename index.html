@@ -1,0 +1,388 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REDSTORE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="static/style.css" />
+</head> -->
+
+<!-- <body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="static/images/logo.png" width="125px" />
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="/about ">About</a></li>
+            <li><a href="/contact ">Contact</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <img src="static/images/cart.png" width="30px" height="30px" />
+        <img src="static/images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div> -->
+
+{% extends 'base.html'%}
+<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong> Successful</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> -->
+{% block content %}
+<div class="row">
+  <div class="col-2">
+    <h1>Give Your Look <br />A New Style!</h1>
+    <p>
+      Success isn't always about Greatness. Its about
+      consistency.Consistent <br />
+      hardwork.Greatness will come.
+    </p>
+    <a href="" class="btn">Explore Now &#8594;</a>
+  </div>
+  <div class="col-2">
+    <img src="static/images/4.jpg" width="auto" height="auto" />
+  </div>
+</div>
+</div>
+</div>
+<!-- ---------------featured categories----------- -->
+
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <img src="static/images/5.jpg" width="auto" height="215px" />
+      </div>
+      <div class="col-3">
+        <img src="static/images/7.jpg" width="auto" height="auto" />
+      </div>
+      <div class="col-3">
+        <img src="static/images/9.jpg" width="auto" height="215px" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---------------featured products----------- -->
+<div class="small-container">
+  <h2 class="title">Featured Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="static/images/1.jpg" width="auto" height="190px" />
+      <h4>Lens 1</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/12.jpg" width="auto" height="190px" />
+      <h4>Lens 2</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₹1000.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/13.jpg" width="auto" height="190px" />
+      <h4>Lens 3</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₹650.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/18.jpg" width="auto" height="190px" />
+      <h4>Lens 4</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>₹800.00</p>
+    </div>
+  </div>
+  <h2 class="title">Latest Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="static/images/14.jpg" height="190px" />
+      <h4>Lens 5</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/17.jpg" height="190px" />
+      <h4>Lens 6</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₹1000.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/20.jpg" height="190px" />
+      <h4>Lens 7</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₹650.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/21.jpg" height="190px" />
+      <h4>Lens 8</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>₹800.00</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <img src="static/images/22.jpg" height="190px" />
+      <h4>Lens 9</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/3.jpg" height="190px" />
+      <h4>Lens 10</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₹1000.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/5.jpg" height="190px" />
+      <h4>Lens 11</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₹650.00</p>
+    </div>
+    <div class="col-4">
+      <img src="static/images/6.jpg" height="190px" />
+      <h4>Lens 12</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>₹800.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- ------------offers----------- -->
+
+<div class="offer">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-2">
+        <img src="static/images/55.jpeg" class="offer-img" />
+      </div>
+      <div class="col-2">
+        <p>Exclusively available on RedStore</p>
+        <h1>Smart Glasses 4.0</h1>
+        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+          eum necessitatibus neque molestiae impedit sunt fugiat laboriosam
+          id.</small>
+        <a href="" class="btn">Buy Now &#8594;</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -----------testimonial----------- -->
+<div class="testimonial">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          earum rerum quasi ea atque at esse est obcaecati debitis. Fugit!
+        </p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <img src="static/images/user-1.png" />
+        <h3>Sean Parker</h3>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          earum rerum quasi ea atque at esse est obcaecati debitis. Fugit!
+        </p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <img src="static/images/user-2.png" />
+        <h3>Mike Smith</h3>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          earum rerum quasi ea atque at esse est obcaecati debitis. Fugit!
+        </p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <img src="static/images/user-3.png" />
+        <h3>Mabel Joe</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ----------brands--------- -->
+<div class="brands">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="static/images/logo-godrej.png" />
+      </div>
+      <div class="col-5">
+        <img src="static/images/logo-oppo.png" />
+      </div>
+      <div class="col-5">
+        <img src="static/images/logo-coca-cola.png" />
+      </div>
+      <div class="col-5">
+        <img src="static/images/logo-paypal.png" />
+      </div>
+      <div class="col-5">
+        <img src="static/images/logo-philips.png" />
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+<!-- -------footer----- -->
+
+<!-- <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and iOS mobiles.</p>
+          <div class="app-logo">
+            <img src="static/images/play-store.png" />
+            <img src="static/images/app-store.png" />
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="static/images/logo-white.png" />
+          <p>
+            Our Purpose Is To Sustainability Make the Pleasure and Benifits of
+            Sports accessible to Many.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupans</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright &#9400; 2023 | REDSTORE</p>
+    </div>
+  </div> -->
+<!-- ---------JS for Toggle Menu--------- -->
+<!-- <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (MenuItems.style.maxheight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+
+</html> -->
